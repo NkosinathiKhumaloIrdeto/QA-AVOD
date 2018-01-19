@@ -49,7 +49,7 @@ logPaths.withReader { reader ->
        	
           println "   " +file.path
         
-          if (file.path.indexOf("13403") > 0){a1++}  //explora
+          if (file.path.indexOf("13303") > 0){a1++}  //explora
           if (file.path.indexOf("13403") > 0){a2++}  //nano
           
   			list << file
