@@ -84,16 +84,21 @@ def dropVideo(def genref, def uid, def name){
   println "\n Done dropping source..." + "\n" + vidName
 }
 
-logFolders(genref)
+logFolders(genref, uid)
 
-def logFolders(genref){
+def logFolders(genref, uiD){
   
   File file = new File("../folders.txt")
   
   file.text = ''
  
   file << genref + "_" + "13303\n" +  genref + "_" + "13403\n"
+
+  File cat_file = new File("../AD_Catalog.txt")
+  cat_file.text = ''
+  cat_file << "IS20_" + genref + "_" + uiD +  "_Nano.mpg\n" +  "IS20_" + genref + "_" + uiD +  "_Explora.mpg\n"
   
+  println "File created "
 }
   
 
