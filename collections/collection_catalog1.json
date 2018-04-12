@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "072a7b05-4efc-4496-ac54-9b7944d123ba",
+		"name": "AVOD_Catalog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Catalog - Nano",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1db19d09-0b1a-4c4c-8e86-36d986157de7",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Genref Found In XML - Nano\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"IS20_AD7926070_MW610603ZY_Nano\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://172.16.103.237:8008/generateCatalog2.php?region=IS20&platform=Nano&environment=Lab&bouquet=Premium",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"103",
+						"237"
+					],
+					"port": "8008",
+					"path": [
+						"generateCatalog2.php"
+					],
+					"query": [
+						{
+							"key": "region",
+							"value": "IS20"
+						},
+						{
+							"key": "platform",
+							"value": "Nano"
+						},
+						{
+							"key": "environment",
+							"value": "Lab"
+						},
+						{
+							"key": "bouquet",
+							"value": "Premium"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Catalog - Explora",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3f078138-c569-4b19-ad46-c44e20cec092",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Genref Found In XML - Nano\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"IS20_AD7926070_MW610603ZY_Explora\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://172.16.103.237:8008/generateCatalog2.php?region=IS20&platform=Explora&environment=Lab&bouquet=Premium",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"103",
+						"237"
+					],
+					"port": "8008",
+					"path": [
+						"generateCatalog2.php"
+					],
+					"query": [
+						{
+							"key": "region",
+							"value": "IS20"
+						},
+						{
+							"key": "platform",
+							"value": "Explora"
+						},
+						{
+							"key": "environment",
+							"value": "Lab"
+						},
+						{
+							"key": "bouquet",
+							"value": "Premium"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
