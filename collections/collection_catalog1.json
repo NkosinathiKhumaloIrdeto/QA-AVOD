@@ -15,7 +15,7 @@
 						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"Genref Found In XML - Nano\", function () {",
-							"    pm.expect(pm.response.text()).to.include(\"IS20_AD7926070_MW610603ZY_Nano\");",
+							"    pm.expect(pm.response.text()).to.include(\"IS20_AD6699867_DD177978DC_Nano\");",
 							"});",
 							""
 						]
@@ -71,7 +71,7 @@
 						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"Genref Found In XML - Nano\", function () {",
-							"    pm.expect(pm.response.text()).to.include(\"IS20_AD7926070_MW610603ZY_Explora\");",
+							"    pm.expect(pm.response.text()).to.include(\"IS20_AD6699867_DD177978DC_Explora\");",
 							"});",
 							""
 						]

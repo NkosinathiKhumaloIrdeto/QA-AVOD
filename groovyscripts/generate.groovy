@@ -113,5 +113,15 @@ def logFolders(genref, uiD){
 
   println "File created "
 }
+
+log_genref(genref)
+
+def log_genref(genref){
+
+  File file = new File("../Batch/AVOD_folders.txt")
+
+  file << genref + "\n"
+
+}
   
 
