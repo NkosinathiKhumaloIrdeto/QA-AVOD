@@ -1,1 +1,1 @@
-newman run "collections/Collection1.json"
+newman run "collections/collection1.json"
