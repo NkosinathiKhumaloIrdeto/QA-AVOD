@@ -20,11 +20,11 @@ for(def i = 0; i < 4; i++){
 	
 def uid = alphaKeys[0] + alphaKeys[1] + String.valueOf(((int)((Math.random()*99999999)+1))).substring(0, 6) + alphaKeys[2] + alphaKeys[3]
 
-println "\n Genref: " + genref + " " + "uid: " + uid 
+println "\nGenref: " + genref + " " + "uid: " + uid 
 
 updateXML(genref, uid)
 
-dropVideo(genref, uid, "automation_ssm.mxf")
+//dropVideo(genref, uid, "automation_ssm.mxf")
 
 println ""
 println "*******"
@@ -34,7 +34,7 @@ println "*******"
 /*update fields mappers in xml*/
 def updateXML(genref, uid){
   
-  println "\n Update xml..."
+println "\nUpdate xml..."
 	
   //read file:
 def xmlContents = new File("collections/collection.json").getText()
@@ -63,7 +63,7 @@ File file = new File(networkPath)
 
 file.text = xmlContents
   
-  println "\n Done updating xml..."
+  println "\nDone updating xml..."
   
 def keys_catalog = ["##genref_explora##","##genref_nano##"]
 
@@ -77,6 +77,7 @@ File newCatalogCollection = new File(networkPathCatalog)
 newCatalogCollection.text = xmlCatalog
 
 }
+
 def dropVideo(def genref, def uid, def name){
   
   println "\n Dropping source..."
