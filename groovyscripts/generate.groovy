@@ -119,7 +119,7 @@ log_genref(genref)
 
 def log_genref(genref){
 
-  File file = new File("../Batch/AVOD_folders.txt")
+  File file = new File("../batch/AVOD_folders.txt")
 
   file << genref + "\n"
 

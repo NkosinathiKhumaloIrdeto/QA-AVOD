@@ -27,13 +27,13 @@
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://172.16.103.237:8008/generateCatalog2.php?region=IS20&platform=Nano&environment=Lab&bouquet=Premium",
+					"raw": "http://10.29.103.239:8008/generateCatalog2.php?region=IS20&platform=Nano&environment=Lab&bouquet=Premium",
 					"protocol": "http",
 					"host": [
-						"172",
-						"16",
+						"10",
+						"29",
 						"103",
-						"237"
+						"244"
 					],
 					"port": "8008",
 					"path": [
@@ -83,13 +83,13 @@
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://172.16.103.237:8008/generateCatalog2.php?region=IS20&platform=Explora&environment=Lab&bouquet=Premium",
+					"raw": "http://10.29.103.239:8008/generateCatalog2.php?region=IS20&platform=Explora&environment=Lab&bouquet=Premium",
 					"protocol": "http",
 					"host": [
-						"172",
-						"16",
+						"10",
+						"29",
 						"103",
-						"237"
+						"239"
 					],
 					"port": "8008",
 					"path": [
