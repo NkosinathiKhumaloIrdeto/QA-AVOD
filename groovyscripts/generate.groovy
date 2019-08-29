@@ -24,7 +24,7 @@ println "\nGenref: " + genref + " " + "uid: " + uid
 
 updateXML(genref, uid)
 
-//dropVideo(genref, uid, "automation_ssm.mxf")
+dropVideo(genref, uid, "automation.mxf")
 
 println ""
 println "*******"
@@ -88,7 +88,6 @@ def dropVideo(def genref, def uid, def name){
   
   def vidName = destFile + genref + "_" + uid + ".mxf"
 
-  
   def srcStream = new File(soureFile).newDataInputStream()
   def dstStream = new File(vidName).newDataOutputStream()
   dstStream << srcStream
