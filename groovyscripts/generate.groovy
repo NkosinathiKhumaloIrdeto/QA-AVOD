@@ -84,7 +84,7 @@ def dropVideo(def genref, def uid, def name){
  ///mnt/Encoder_Area
   def soureFile = "/mnt/Encoder_Area/Ardome/Automation files/" + name
   println soureFile
-  def destFile = "//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/"
+  def destFile = "/mnt/Encoder_Area/Ardome/AUTOMATION_SYSTEM/"
   
   def vidName = destFile + genref + "_" + uid + ".mxf"
 
