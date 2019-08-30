@@ -81,8 +81,8 @@ newCatalogCollection.text = xmlCatalog
 def dropVideo(def genref, def uid, def name){
   
   println "\n Dropping source..."
- 
-  def soureFile = "\\\\172.16.103.220\\Encoder_Area\\Ardome\\Automation files\\" + name
+ ///mnt/Encoder_Area
+  def soureFile = "/mnt/Encoder_Area/Ardome/Automation files/" + name
   println soureFile
   def destFile = "//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/"
   
@@ -96,6 +96,7 @@ def dropVideo(def genref, def uid, def name){
 
   println "\n Done dropping source..." + "\n" + vidName
 }
+
 
 logFolders(genref, uid)
 
